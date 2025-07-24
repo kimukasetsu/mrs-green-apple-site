@@ -1,0 +1,247 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdf4; /* 非常に薄いグリーン */
+    color: #333;
+}
+
+header {
+    background: #4CAF50; /* ミセスグリーン */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+}
+
+nav {
+    padding: 1rem 0;
+    background: #388E3C; /* ヘッダーより少し濃いグリーン */
+    text-align: center;
+    box-shadow: inset 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #e8eaf6; /* 少し明るい白 */
+    background-color: rgba(255,255,255,0.1);
+}
+
+main {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    color: #2E7D32; /* 深いグリーン */
+    font-size: 2.4em;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #e0e0e0;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 50px 0;
+}
+
+/* バンド写真 */
+.band-photo {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+small {
+    display: block;
+    text-align: center;
+    color: #777;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* メンバー紹介 */
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.member-card {
+    background: #e8f5e9; /* 非常に薄いグリーン */
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 6px solid #66BB6A; /* アクセントグリーン */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    flex: 1 1 calc(33.33% - 60px); /* 3列表示 */
+    box-sizing: border-box;
+    min-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.member-card h3 {
+    color: #33691E; /* 濃いグリーン */
+    margin-top: 0;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.member-photo {
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover; /* 画像の比率を保ちつつ切り抜き */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 4px solid #81C784; /* 明るいグリーン */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* おすすめ楽曲 */
+.song-card {
+    background: #e1f5fe; /* 明るい水色 */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-left: 6px solid #4FC3F7; /* 明るい青 */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.song-card h3 {
+    color: #0288D1; /* 鮮やかな青 */
+    margin-top: 0;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.song-link {
+    display: inline-block;
+    background-color: #FF9800; /* 鮮やかなオレンジ */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.song-link:hover {
+    background-color: #F57C00; /* 濃いオレンジ */
+}
+
+iframe {
+    display: block;
+    margin-top: 25px;
+    max-width: 100%;
+    width: 100%;
+    height: 360px; /* 動画の高さを少し高めに設定 */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav a {
+        padding: 0 10px;
+        font-size: 1em;
+    }
+    main {
+        padding: 20px 15px;
+        margin: 15px auto;
+    }
+    section h2 {
+        font-size: 2em;
+    }
+    .member-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .member-card {
+        flex: 1 1 90%;
+    }
+    iframe {
+        height: 250px; /* スマートフォンでの高さを調整 */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        padding: 5px 10px;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+    .song-card h3 {
+        font-size: 1.6em;
+    }
+}
